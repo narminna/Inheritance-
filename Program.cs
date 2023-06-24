@@ -17,13 +17,21 @@ namespace Inheritance
     }
     public class Teacher : Person
     {
+        public Teacher(string name, string surname, int age) : base(name, surname, age)
+        {
+
+        }
         public void Explain()
         {
             Console.WriteLine("Explaining...");
         }
     }
-    public class Student : Person
+    public class Student : Person 
     {
+        public Student(string name, string surname, int age):base(name, surname, age)
+        {
+
+        }
         public void Learn()
         {
             Console.WriteLine("Learning...");
